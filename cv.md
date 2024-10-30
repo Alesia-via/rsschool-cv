@@ -33,7 +33,7 @@ let sum = arr.reduce((sum, current) => sum + (+current), 0)
  return sum;
 };
   ```
-  ### **Education:**
+   ### **Education:**
 
 2004-2009   
 Mogilev State University named after A.A. Kuleshov   
