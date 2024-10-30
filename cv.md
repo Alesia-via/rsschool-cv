@@ -1,6 +1,6 @@
-#**Alesia Viarkhoutsava**
+# **Alesia Viarkhoutsava**
 
-##**junior web developer**
+## **junior web developer**
 
 mobile phone: +37544776-38-21
 e-mail: alesiavia@outlook.com
