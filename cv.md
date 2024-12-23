@@ -19,7 +19,8 @@ An enthusiastic and detail-oriented Junior Frontend Developer with proficient kn
 ### **Skills:**
 *HTML  
 *CSS   
-*JavaScript Basics  
+*JavaScript Basics
+*DOM, BOM  
 *Git,GitHub
 *VS Code   
 

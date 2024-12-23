@@ -1,10 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alesia Viarkhoutsava</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="wrapper header-wrapper">
+            <div class="overlay"></div>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code-example" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                </ul>
+            </nav>
+            <span class="burger"><span class="burger_line first"></span> <span class="burger_line second"></span> <span class="burger_line third"></span></span>
+            </div>
+        </header>
+        <main class="main">
+            <section class="section profile" id="profile"> 
+                <div class="wrapper about_wrapper">
+                    <div class="photo"></div>
+                    <div class="name_position">
+                        <h1>Alesia Viarkhoutsava</h1>
+                        <p class="position">junior web developer</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section contacts" id="contacts">
+                <h2>Contacts:</h2>
+                <ul class="section_list contacts_list">
+                    <li class="section_item contact_item"> mobile phone:
+                        <a class="section_link contact_link" href="tel:+375447763821">+37544776-38-21</a>
+                     </li>
+                     <li class="section_item contact_item">e-mail:
+                        <a class="section_link contact_link" href="mailto:alesiavia@outlook.com">alesiavia@outlook.com</a>
+                     </li>
+                     <li class="section_item contact_item">github:
+                        <a class="section_link contact_link" target="_blank" href="https://github.com/Alesia-via">Alesia-via</a>
+                     </li>
+                     <li class="section_item contact_item">discord:
+                        <a class="section_link contact_link" target="_blank" href="https://discord.com/@alesia-via">Alesiavia(@alesia-via)</a>
+                     </li>
+                     <li class="section_item contact_item">telegram:
+                        <a class="section_link contact_link" target="_blank" href="https://t.me/alesiaviarkhoutsava">@alesiaviarkhoutsava</a>
+                     </li>
+                </ul>
+            </section>
+            <section class="section summary" id="summary">
+                <h2>About me</h2>
+                <p class="section_text">  An enthusiastic and detail-oriented Junior Frontend Developer with proficient knowledge in HTML,CSS, JavaScript.Seeking to utilize my technical skills and expertise to provide value to the employer and contribute to successful projects both today and in the future. Aiming to take on new challenges and utilize my coding and debugging skills for developing new features and enhance the overall user experience. </p>
+            </section>
+            <section class="section skills" id="skills">
+                <h2>Skills:</h2>
+                <ul class="list">
+                    <li class="section_item skills_item">HTML</li>
+                    <li class="section_item skills_item">CSS</li>
+                    <li class="section_item skills_item">JavaScript Basics</li>
+                    <li class="section_item skills_item">DOM, BOM</li>
+                    <li class="section_item skills_item">Git,GitHub</li>
+                    <li class="section_item skills_item">VS Code </li>
+                    <li class="section_item skills_item">Figma</li>
+                </ul>
+            </section>
+            <section class="section code_example" id="code-example">
+                <h2>CODE</h2>
+                <pre class="code_test"> 
+                <code>
+const countBits = function(n) {
+ 
+let str = n.toString(2);
+let arr = [...str];
+let sum = arr.reduce((sum, current) => sum + (+current), 0)
+return sum;
+};
+                </code>
+                </pre>
+            </section>
+            <section class="section education" id="education">
+                <h2>Education:</h2>
+                <ul class="section_list">
+                    <li class="section_item">2004-2009 </li>
+                    <li class="section_item">Mogilev State University named after A.A. Kuleshov</li>
+                    <li class="section_item">'State management'</li>
+            </section>
+            <section class="section languages:" id="languages:">
+                <h2>Languages:</h2>
+                <ul class="section_list">
+                    <li class="section_item">Belarusian (native)</li>
+                    <li class="section_item">Russian (native)</li>
+                    <li class="section_item">English (B2: Upper-Intermediate)</li>
+                </ul>
+
+            </section>
+            <section class="section courses" id="courses">
+                <h2>Courses:</h2>
+                <ul class="section_list">
+                    <li class="section_item">Code-Basics: HTML, CSS, JS</li>
+                    <li class="section_item">FreeCodeCamp</li>
+                    <li class="section_item">RS School/Front-end</li>
+                </ul>
+            </section>
+            <section class="section projects" id="projects">
+                <h2>Projects:</h2>
+                <ul class="section_list">
+                    <li class="section_item project_item"><a class="section_link project_link">Shelter</a></li>
+                    <li class="section_item project_item"><a class="section_link project_link">The Gifts</a></li>
+
+                </ul>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="wrapper footer_wrapper">
+          
+                <div class="footer_conteiner">
+                    <a class="section_link contact_link" href="tel:+375447763821"><img class="img_icon" alt="phone" src="./assets/phone2.svg"></a>
+                    <a class="section_link contact_link" href="mailto:alesiavia@outlook.com"><img class="img_icon" alt="e-mail" src="./assets/2-2.svg"></a>
+                    <a class="section_link contact_link" target="_blank" href="https://github.com/Alesia-via"><img class="img_icon" alt="github" src="./assets/3-2.svg"></a>
+                    <a class="section_link contact_link" target="_blank" href="https://discord.com/@alesia-via"><img class="img_icon" alt="discord" src="./assets/4-2.svg"></a>
+                    <a class="section_link contact_link" target="_blank" href="https://t.me/alesiaviarkhoutsava"><img class="img_icon" alt="telegram" src="./assets/5-2.svg"></a>
+                </div>
+                <div class="footer_conteiner">
+                    <span class="footer_text"> © 2022 </span>
+                    <span class="footer_text">by Alesia Viarkhoutsava</span>
+                </div>
+                
+            </div>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
