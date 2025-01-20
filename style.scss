@@ -12,9 +12,10 @@
 // constants
 $color-heading: #181C29;
 $color-text:#5a627d;
-$color-header: #ecc8e3;
+$color-header: #fb6fb390;
 $color-active-burger: #ecd8e7;
-$color-line: #9fc7e6;
+$color-line: #87e7f0df;
+$color-background: #f0ecb82d;
 $color-section-title: #57265db7;;
 $color-icon: #829985;
 $color-background-hover:#bfdcf2;
@@ -46,6 +47,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+   
     @include media-mobile{
         font-size: 1.2rem; 
     }
@@ -56,15 +58,13 @@ body{
     max-width: $content-width;
     width:100%;
     margin: 0 auto;
+    background-color: $color-background;
 }
 
-.header {
-    background-color: $color-header;
-    padding: 10px 30px;
-}
 .nav_list{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
 
@@ -124,8 +124,9 @@ transform: scale(1.1);
 }
 .section{
     padding: 5%;
-    border-bottom: 5px solid $color-line;
+    border-bottom: 8px solid $color-line;
     width: calc(50%);
+    
     @include media-tablet{
         width: calc(100%);   
     }
@@ -138,6 +139,7 @@ transform: scale(1.1);
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0);
 }
 .position{
     font-size: 2.8rem;
@@ -190,12 +192,29 @@ h1::after {
         text-align: center;
     }
   }
-  .header-wrapper{
+  .header_wrapper{
+    background-color: $color-header;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+    border-radius:0 0 20px 20px;
+    padding: 10px 30px;
+    @include media-tablet{
+        border-radius:0 0 10px 10px;   
+    }
   }
-  
+  #language-select{
+    border: 2px solid $color-header;
+    background-color: $color-background;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  .form_select,
+  .form_item{
+    @extend %font-heading;
+    color:$color-text;
+  }
+ 
   .section_item{
     list-style: none;
     @extend %font-heading;
@@ -289,6 +308,9 @@ h1::after {
 .skills_item{
     list-style:disc;
 }
+.photo{
+    width: 250px;
+}
 .code_example{
     display: flex;
     flex-direction: column;
@@ -296,10 +318,10 @@ h1::after {
 }
 .code_test{
     padding: 0px;
-}
-.code_test{
     color: $color-text;
+    white-space: pre-wrap;
 }
+
 .project_item{
     position: relative;
     padding: 0px 40px;
@@ -329,11 +351,24 @@ h1::after {
     height: 21px;
     background-image:url(./assets/snowflake.svg);
   }
-.projects {
-    border-bottom: 0px;
-    
+  .project_item:nth-child(3):before{
+    top: 3px;
+    left: 0px;
+    width: 21px;
+    height: 21px;
+    background-image:url(./assets/2.svg);
+  }
+.education,
+.languages {
+    border-bottom: 0px;  
 }
+.courses{
+    @include media-tablet{
+        border-bottom: 5px solid $color-line;
+    }
+} 
   .footer_wrapper{
+    border-radius: 20px 20px 0 0;
     background-color: $color-header;
     display: flex;
     flex-direction: column;

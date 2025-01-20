@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alesia Viarkhoutsava</title>
+<link rel="icon" href="./assets/user.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,37 +16,62 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="wrapper header-wrapper">
+            <div class="wrapper header_wrapper">
             <div class="overlay"></div>
+            <form id="language-switcher">
+                <select class="form_select" id="language-select">
+                  <option class="form_item" disabled selected>Languages</option>
+                  <option class="form_item" value="eng">English</option>
+                  <option class="form_item" value="ru">Russian</option>
+                  </select>
+            </form>
+            <!-- <div class="language-switcher">
+                <button id="en-btn">English</button>
+                <button id="ru-btn">Русский</button>
+            </div> -->
             <nav class="nav">
                 <ul class="nav_list">
-                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                    <li class="nav-item"><a href="#summary" class="nav-link">About me</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#code-example" class="nav-link">Code</a></li>
-                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                    <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
-                    <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
-                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link"data-eng="Projects" data-ru="Проекты">Projects</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link" data-eng="Contacts" data-ru="Контакты">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link" data-eng="About me" data-ru="Обо мне">About me</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link" data-eng="Skills" data-ru="Навыки">Skills</a></li>
+                    <li class="nav-item"><a href="#code-example" class="nav-link"data-eng="Code" data-ru="Код">Code</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link"data-eng="Courses" data-ru="Курсы">Courses</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link"data-eng="Education" data-ru="Образование">Education</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link"data-eng="Languages" data-ru="Языки">Languages</a></li>
+                   
+                    
                 </ul>
             </nav>
             <span class="burger"><span class="burger_line first"></span> <span class="burger_line second"></span> <span class="burger_line third"></span></span>
             </div>
         </header>
         <main class="main">
+
             <section class="section profile" id="profile"> 
                 <div class="wrapper about_wrapper">
-                    <div class="photo"></div>
+                    <div class="photo">
+                        <!-- <img src="./assets/flower.svg" alt="Flower"> -->
+                    </div>
                     <div class="name_position">
-                        <h1>Alesia Viarkhoutsava</h1>
-                        <p class="position">junior web developer</p>
+                        <h1 data-eng="Alesia Viarkhoutsava" data-ru="Алеся Верховцева">Alesia Viarkhoutsava</h1>
+                        <p class="position" data-eng="junior web developer" data-ru="младший веб-разработчик">junior web developer</p>
                     </div>
                 </div>
             </section>
+            <section class="section projects" id="projects">
+                <h2 data-eng="Projects" data-ru="Проекты">Projects</h2>
+                <ul class="section_list">
+                    <li class="section_item project_item"><a class="section_link project_link">Shelter</a></li>
+                    <li class="section_item project_item"><a class="section_link project_link">The Gifts</a></li>
+                    <li class="section_item project_item"><a href="https://alesia-via.github.io/e-mail/" target="_blank" class="section_link project_link">Email layout</a></li>
+
+                </ul>
+            </section>
             <section class="section contacts" id="contacts">
-                <h2>Contacts:</h2>
+                <h2 data-eng="Contacts" data-ru="Контакты">Contacts</h2>
                 <ul class="section_list contacts_list">
-                    <li class="section_item contact_item"> mobile phone:
+                    <li class="section_item contact_item">mobile phone:
                         <a class="section_link contact_link" href="tel:+375447763821">+37544776-38-21</a>
                      </li>
                      <li class="section_item contact_item">e-mail:
@@ -63,11 +89,13 @@
                 </ul>
             </section>
             <section class="section summary" id="summary">
-                <h2>About me</h2>
-                <p class="section_text">  An enthusiastic and detail-oriented Junior Frontend Developer with proficient knowledge in HTML,CSS, JavaScript.Seeking to utilize my technical skills and expertise to provide value to the employer and contribute to successful projects both today and in the future. Aiming to take on new challenges and utilize my coding and debugging skills for developing new features and enhance the overall user experience. </p>
+                <h2 data-eng="About me" data-ru="Обо мне">About me</h2>
+                <p class="section_text" data-eng="I am an enthusiastic and detail-oriented individual with a passion for learning and personal growth. My journey into web development began out of curiosity and quickly evolved into a dedicated hobby. I enjoy solving problems, working on creative projects, and seeing the tangible results of my efforts. I have a solid foundation in HTML, CSS, and JavaScript and am eager to further develop my skills by contributing to real-world projects. My active and healthy lifestyle reflects my commitment to discipline and perseverance. If you're looking for a motivated junior frontend developer or layout designer, I would be excited to join your team." data-ru="Я энергичная и внимательная к деталям, увлеченная обучением и личностным ростом. Мое знакомство с веб-разработкой началось из любопытства и быстро превратилось в настоящее хобби. Мне нравится решать задачи, работать над творческими проектами и видеть реальные результаты своих усилий.
+
+                У меня есть прочная база знаний в HTML, CSS и JavaScript, и я стремлюсь развивать свои навыки, участвуя в реальных проектах. Мой активный и здоровый образ жизни отражает мою дисциплинированность и настойчивость. Если вы ищете мотивированного junior frontend-разработчика или верстальщика, я с радостью присоединюсь к вашей команде.">"I am an enthusiastic and detail-oriented individual with a passion for learning and personal growth. My journey into web development began out of curiosity and quickly evolved into a dedicated hobby. I enjoy solving problems, working on creative projects, and seeing the tangible results of my efforts. I have a solid foundation in HTML, CSS, and JavaScript and am eager to further develop my skills by contributing to real-world projects. My active and healthy lifestyle reflects my commitment to discipline and perseverance. If you're looking for a motivated junior frontend developer or layout designer, I would be excited to join your team."</p>
             </section>
             <section class="section skills" id="skills">
-                <h2>Skills:</h2>
+                <h2 data-eng="Skills" data-ru="Навыки">Skills</h2>
                 <ul class="list">
                     <li class="section_item skills_item">HTML</li>
                     <li class="section_item skills_item">CSS</li>
@@ -79,7 +107,7 @@
                 </ul>
             </section>
             <section class="section code_example" id="code-example">
-                <h2>CODE</h2>
+                <h2 data-eng="CODE" data-ru="КОД">CODE</h2>
                 <pre class="code_test"> 
                 <code>
 const countBits = function(n) {
@@ -92,37 +120,32 @@ return sum;
                 </code>
                 </pre>
             </section>
-            <section class="section education" id="education">
-                <h2>Education:</h2>
-                <ul class="section_list">
-                    <li class="section_item">2004-2009 </li>
-                    <li class="section_item">Mogilev State University named after A.A. Kuleshov</li>
-                    <li class="section_item">'State management'</li>
-            </section>
-            <section class="section languages:" id="languages:">
-                <h2>Languages:</h2>
-                <ul class="section_list">
-                    <li class="section_item">Belarusian (native)</li>
-                    <li class="section_item">Russian (native)</li>
-                    <li class="section_item">English (B2: Upper-Intermediate)</li>
-                </ul>
-
-            </section>
             <section class="section courses" id="courses">
-                <h2>Courses:</h2>
+                <h2 data-eng="Courses" data-ru="Курсы">Courses</h2>
                 <ul class="section_list">
                     <li class="section_item">Code-Basics: HTML, CSS, JS</li>
                     <li class="section_item">FreeCodeCamp</li>
                     <li class="section_item">RS School/Front-end</li>
                 </ul>
             </section>
-            <section class="section projects" id="projects">
-                <h2>Projects:</h2>
+            <section class="section languages" id="languages">
+                <h2 data-eng="Languages" data-ru="Языки">Languages</h2>
                 <ul class="section_list">
-                    <li class="section_item project_item"><a class="section_link project_link">Shelter</a></li>
-                    <li class="section_item project_item"><a class="section_link project_link">The Gifts</a></li>
-
+                    <li class="section_item" data-eng="Belarusian (native)" data-ru="Белорусский(носитель)">Belarusian (native)</li>
+                    <li class="section_item" data-eng="Russian (native)" data-ru="Русский(носитель)">Russian (native)</li>
+                    <li class="section_item" data-eng="English (B2: Upper-Intermediate)" data-ru="Английский (B2: Upper-Intermediate)">English (B2: Upper-Intermediate)</li>
                 </ul>
+
+            </section>
+            <section class="section education" id="education">
+                <h2 data-eng="Education" data-ru="Образование">Education</h2>
+                <ul class="section_list">
+                    <li class="section_item">2004-2009 </li>
+                    <li class="section_item">Mogilev State University named after A.A. Kuleshov</li>
+                    <li class="section_item">'State management'</li>
+            </section>
+
+
             </section>
         </main>
         <footer class="footer">

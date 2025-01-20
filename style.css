@@ -1,4 +1,5 @@
-.footer_text, .section_link, .section_item, h1, .nav-link {
+.footer_text, .section_link, .section_item, .form_select,
+.form_item, h1, .nav-link {
   font-family: "Montserrat", serif;
   font-weight: 400;
   font-style: normal;
@@ -37,16 +38,13 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-}
-
-.header {
-  background-color: #ecc8e3;
-  padding: 10px 30px;
+  background-color: rgba(240, 236, 184, 0.1764705882);
 }
 
 .nav_list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
 }
@@ -108,7 +106,7 @@ body {
 
 .section {
   padding: 5%;
-  border-bottom: 5px solid #9fc7e6;
+  border-bottom: 8px solid rgba(135, 231, 240, 0.8745098039);
   width: 50%;
 }
 @media screen and (max-width: 768px) {
@@ -126,6 +124,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .position {
@@ -157,7 +156,7 @@ h1::after {
   margin-left: -70px;
   width: 140px;
   height: 2px;
-  background-color: #9fc7e6;
+  background-color: rgba(135, 231, 240, 0.8745098039);
 }
 
 .name_position {
@@ -184,10 +183,30 @@ h2 {
   }
 }
 
-.header-wrapper {
+.header_wrapper {
+  background-color: rgba(251, 111, 179, 0.5647058824);
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
+  border-radius: 0 0 20px 20px;
+  padding: 10px 30px;
+}
+@media screen and (max-width: 768px) {
+  .header_wrapper {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+#language-select {
+  border: 2px solid rgba(251, 111, 179, 0.5647058824);
+  background-color: rgba(240, 236, 184, 0.1764705882);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.form_select,
+.form_item {
+  color: #5a627d;
 }
 
 .section_item {
@@ -291,6 +310,10 @@ h2 {
   list-style: disc;
 }
 
+.photo {
+  width: 250px;
+}
+
 .code_example {
   display: flex;
   flex-direction: column;
@@ -299,10 +322,8 @@ h2 {
 
 .code_test {
   padding: 0px;
-}
-
-.code_test {
   color: #5a627d;
+  white-space: pre-wrap;
 }
 
 .project_item {
@@ -337,12 +358,28 @@ h2 {
   background-image: url(./assets/snowflake.svg);
 }
 
-.projects {
+.project_item:nth-child(3):before {
+  top: 3px;
+  left: 0px;
+  width: 21px;
+  height: 21px;
+  background-image: url(./assets/2.svg);
+}
+
+.education,
+.languages {
   border-bottom: 0px;
 }
 
+@media screen and (max-width: 768px) {
+  .courses {
+    border-bottom: 5px solid rgba(135, 231, 240, 0.8745098039);
+  }
+}
+
 .footer_wrapper {
-  background-color: #ecc8e3;
+  border-radius: 20px 20px 0 0;
+  background-color: rgba(251, 111, 179, 0.5647058824);
   display: flex;
   flex-direction: column;
   justify-content: center;
