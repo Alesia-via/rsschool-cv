@@ -347,7 +347,7 @@ h2 {
   left: 0px;
   width: 21px;
   height: 21px;
-  background-image: url(./assets/Icon04.svg);
+  background-image: url(./assets/music-blue.svg);
 }
 
 .project_item:nth-child(2):before {
@@ -355,7 +355,7 @@ h2 {
   left: 0px;
   width: 21px;
   height: 21px;
-  background-image: url(./assets/Icon03.svg);
+  background-image: url(./assets/Icon04.svg);
 }
 
 .project_item:nth-child(3):before {
@@ -363,7 +363,7 @@ h2 {
   left: 0px;
   width: 21px;
   height: 21px;
-  background-image: url(./assets/icon-sleeping-area.svg);
+  background-image: url(./assets/Icon03.svg);
 }
 
 .project_item:nth-child(4):before {
@@ -371,7 +371,7 @@ h2 {
   left: 0px;
   width: 21px;
   height: 21px;
-  background-image: url(./assets/snowflake.svg);
+  background-image: url(./assets/icon-sleeping-area.svg);
 }
 
 .project_item:nth-child(5):before {
@@ -379,10 +379,18 @@ h2 {
   left: 0px;
   width: 21px;
   height: 21px;
-  background-image: url(./assets/2.svg);
+  background-image: url(./assets/snowflake.svg);
 }
 
 .project_item:nth-child(6):before {
+  top: 3px;
+  left: 0px;
+  width: 21px;
+  height: 21px;
+  background-image: url(./assets/2.svg);
+}
+
+.project_item:nth-child(7):before {
   top: 3px;
   left: 0px;
   width: 21px;
